@@ -1,0 +1,8 @@
+Jan 15 03:22:11 server sshd[1234]: Failed password for root from 192.168.1.105 port 4444
+Jan 15 03:22:14 server sshd[1234]: Failed password for root from 192.168.1.105 port 4444
+Jan 15 03:22:17 server sshd[1234]: Failed password for root from 192.168.1.105 port 4444
+Jan 15 03:22:20 server sshd[1234]: Failed password for root from 192.168.1.105 port 4444
+Jan 15 03:22:23 server sshd[1234]: Failed password for root from 192.168.1.105 port 4444
+Jan 15 03:24:01 server sudo: user kong executed command /bin/bash as root
+Jan 15 03:25:10 server kernel: USB device connected: unknown manufacturer
+Jan 15 03:26:33 server sshd[1234]: Accepted password for root from 185.220.101.45 port 4444

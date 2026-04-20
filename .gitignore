@@ -1,0 +1,9 @@
+# Hide the .env file from GitHub - never upload API keys
+.env
+
+# Hide Python cache files
+__pycache__/
+*.pyc
+
+# Hide VS Code settings
+.vscode/
