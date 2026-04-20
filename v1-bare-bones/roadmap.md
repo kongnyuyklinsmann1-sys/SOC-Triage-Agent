@@ -112,3 +112,9 @@ Date: April 19, 2026
 - .gitignore created to protect secrets
 - All versions updated to read from .env
 - Project is now safe to upload to GitHub
+## Next Session - To Do
+1. Set up GitHub account
+2. Create repository for SOC-Triage-Agent
+3. Push all files to GitHub
+4. Add README.md to the project
+5. Begin planning v5 multi-agent architecture

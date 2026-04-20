@@ -11,8 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Connect to OpenAI using the key from .env file
-client = OpenAI(api_key=os.getenv("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"))
-
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # Open and read the log file we created
 with open("v1-bare-bones/sample_logs.txt", "r") as file:
     logs = file.read()
