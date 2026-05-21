@@ -1,0 +1,82 @@
+[
+  {
+    "events": [
+      {
+        "description": "Multiple failed SSH login attempts for root from the same IP address (192.168.1.105), indicating a possible brute force attack.",
+        "severity": "High",
+        "risk_score": 8,
+        "mitre_technique": "Brute Force: T1110",
+        "recommendation": "Implement rate limiting on SSH access and consider using fail2ban or similar tools to block repeated failed attempts.",
+        "ip_address": "192.168.1.105"
+      },
+      {
+        "description": "Successful SSH login for root from an external IP address (185.220.101.45) following multiple failed attempts from an internal IP.",
+        "severity": "Critical",
+        "risk_score": 9,
+        "mitre_technique": "Valid Accounts: T1078",
+        "recommendation": "Immediately investigate the circumstances surrounding the successful login. Revoke any unauthorized access and change the root password. Consider implementing two-factor authentication.",
+        "ip_address": "185.220.101.45"
+      },
+      {
+        "description": "A user (kong) executed a command with root privileges, which could be suspicious if this user does not typically use elevated privileges.",
+        "severity": "Medium",
+        "risk_score": 5,
+        "mitre_technique": "Execution: T1203",
+        "recommendation": "Review the command executed by user kong for legitimacy and monitor for any further unusual actions by this user.",
+        "ip_address": "null"
+      },
+      {
+        "description": "USB device connected with unknown manufacturer, which might indicate an unauthorized device being attached to the system.",
+        "severity": "Medium",
+        "risk_score": 4,
+        "mitre_technique": "Removable Media: T1092",
+        "recommendation": "Investigate the USB connection and ensure that it is secure and authorized. Review logs for any data transfer or unexpected behavior following this connection.",
+        "ip_address": "null"
+      }
+    ],
+    "blocked_ips": [
+      "185.220.101.45"
+    ],
+    "timestamp": "2026-05-21 09:44:54"
+  },
+  {
+    "events": [
+      {
+        "description": "Multiple failed SSH login attempts for root from the same IP.",
+        "severity": "High",
+        "risk_score": 7,
+        "mitre_technique": "Brute Force - T1110",
+        "recommendation": "Implement SSH rate limiting and change root access to be more secure. Consider using key-based authentication instead of password-based.",
+        "ip_address": "192.168.1.105"
+      },
+      {
+        "description": "Successful SSH login for root from an external IP after multiple failed attempts.",
+        "severity": "Critical",
+        "risk_score": 9,
+        "mitre_technique": "Valid Accounts - T1078",
+        "recommendation": "Immediately investigate the source of the successful login. Disable root login and enforce strong password policies. Monitor for suspicious activity.",
+        "ip_address": "185.220.101.45"
+      },
+      {
+        "description": "User 'kong' executed a shell command as root.",
+        "severity": "Medium",
+        "risk_score": 5,
+        "mitre_technique": "Privilege Escalation - T1068",
+        "recommendation": "Audit the actions of user 'kong' and restrict sudo access if necessary. Ensure proper user account controls are in place.",
+        "ip_address": "null"
+      },
+      {
+        "description": "USB device connected with unknown manufacturer.",
+        "severity": "Medium",
+        "risk_score": 4,
+        "mitre_technique": "Peripheral Device Compromise - T1090",
+        "recommendation": "Investigate the connected USB device for potential threats. Limit USB access on server if it is not needed.",
+        "ip_address": "null"
+      }
+    ],
+    "blocked_ips": [
+      "185.220.101.45"
+    ],
+    "timestamp": "2026-05-21 10:03:57"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "192.168.1.105": {
+    "count": 2,
+    "first_seen": "2026-05-21 09:42:52",
+    "events": [
+      "Multiple failed SSH login attempts for root from the same IP address (192.168.1.105), indicating a possible brute force attack.",
+      "Multiple failed SSH login attempts for root from the same IP."
+    ]
+  },
+  "185.220.101.45": {
+    "count": 2,
+    "first_seen": "2026-05-21 09:42:52",
+    "events": [
+      "Successful SSH login for root from an external IP address (185.220.101.45) following multiple failed attempts from an internal IP.",
+      "Successful SSH login for root from an external IP after multiple failed attempts."
+    ]
+  }
+}
